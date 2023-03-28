@@ -1,5 +1,5 @@
 import React from "react"
-import Home from "./Timer/Home";
+import Home from "./Home";
 
 function App() {
   return (

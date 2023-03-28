@@ -4,21 +4,21 @@ const initialState = {
   taskDetails: [
     {
       id: 1,
-      title: "array problem",
-      time: "00:15:45",
-      description: "solved 2 array problem",
+      title: "Employee Personal Module",
+      time: "03:15:45",
+      description: "Completed Employee Adding And Updating Section",
     },
     {
       id: 2,
-      title: "Arrow Function",
-      time: "00:34:45",
-      description: "solved 2 array function problem",
+      title: "Salary Module",
+      time: "05:34:45",
+      description: "Completed Salary Module ",
     },
     {
       id: 3,
-      title: "Generator Function",
-      time: "00:45:45",
-      description: "Studied Generator Function",
+      title: "Cash Flow Management",
+      time: "04:45:45",
+      description: "Completed Cash Flow and Its Related Sections",
     },
   ],
 };

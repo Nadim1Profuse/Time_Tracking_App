@@ -22,15 +22,12 @@ const TaskList = () => {
   const dispatch = useDispatch();
 
   const handleEdit = (e) => {
-    const clickedIndex = e.target.value;
-    setUpdateIndex(clickedIndex);
-    console.log("handleEdit trigred index id=", clickedIndex);
+    setUpdateIndex(e.target.value);
     setUpdateModelShow(true);
   };
 
   const handleDelete = (e) => {
     const clickedIndex = e.target.value;
-    console.log("hanldeDelte trigred index value=", clickedIndex);
     dispatch(deleteTask(clickedIndex));
     setDeleteConfirmModalShow(true);
   };
@@ -62,8 +59,8 @@ const TaskList = () => {
                       title={task.title}
                       description={task.description}
                       time={task.time}
-                      edit={handleEdit}
-                      delete={handleDelete}
+                      editTask={handleEdit}
+                      deleteTask={handleDelete}
                     />
                   ))}
               </tbody>
@@ -91,7 +88,7 @@ const TaskList = () => {
           show={updateModelShow}
           onHide={() => setUpdateModelShow(false)}
           updateIndex={updateIndex}
-          openConfirmModel={()=>setUpdateConfirmModelShow(true)}
+          openConfirmModel={() => setUpdateConfirmModelShow(true)}
         />
       )}
     </>
